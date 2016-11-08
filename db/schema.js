@@ -7,10 +7,11 @@ const Schema = mongoose.Schema;
 // ----------------------
 const resourceSchema = new Schema({
   // example of optional fields
-  title:        { type: String, required: true },
+  name:        { type: String, required: true },
   description:  { type: String },
-  upVotes:      { type: Number, default: 0 },
-  createdAt:    { type: Date, default: Date.now }
+  imgLink:      { type: String },
+  price:    { type: Number, required: true },
+  warranty: { type: Boolean, default: false }
 
 })
 
